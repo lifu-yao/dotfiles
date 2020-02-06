@@ -2,7 +2,8 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/yaolifu/.oh-my-zsh"
+# export ZSH="/Users/yaolifu/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -74,7 +75,6 @@ plugins=(
 	dotenv
 	osx
 	zsh-autosuggestions
-	last-working-dir
 	web-search
 	yarn
 	extract
@@ -83,7 +83,7 @@ plugins=(
 	z
 	)
 
-source /Users/yaolifu/.oh-my-zsh/oh-my-zsh.sh
+source ~/.oh-my-zsh/oh-my-zsh.sh
 source ~/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # User configuration
 
@@ -113,16 +113,14 @@ source ~/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # tmux shortcuts
 alias t.="tmux a -t dotfiles"
-alias tlc="tmux a -t leetcode"
-alias td="tmux a -t desktop"
 # control music 
-alias mp="music play"
-alias ms="music pause"
-alias mn="music next"
+alias sp="spotify play"
+alias ss="spotify pause"
+alias sn="spotify next"
 # ssh remote connect to Google computer engine session
-alias ssh="ssh -i ~/.ssh/my-ssh-key leaf@35.239.57.188"
+alias ssh="ssh -i ~/.ssh/gc_rsa yaolifu@35.239.57.188"
 # stock price
-alias stock="./ticker.sh  $(cat ~/.ticker.conf)"
+alias stock="~/ticker.sh  $(cat ~/.ticker.conf)"
 # 
 alias ch="open -a 'Google Chrome' "
 # git commit -a -m "update"
