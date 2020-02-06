@@ -22,8 +22,8 @@ set listchars=tab:>\ ,trail:.,extends:\#,nbsp:.
 
 
 " Spell settingi StatusLine ctermfg=0 ctermbg=grey
-hi TabLine ctermfg=darkgrey ctermbg=0 cterm=none
-hi TabLineSel ctermfg=grey ctermbg=none cterm=none
+hi TabLine ctermfg=grey ctermbg=none cterm=none
+hi TabLineSel ctermfg=darkblue ctermbg=0 cterm=none
 hi TabLineFill ctermfg=none ctermbg=none cterm=none
 
 " set hybrid line numbers
@@ -67,10 +67,16 @@ let g:syntastic_check_on_wq = 0
 
 set mouse=a
 
+set backspace=indent,eol,start " backspace over everything in insert mode"
 
 " -----------------
 " Plugins.
 " -----------------
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
 
 call plug#begin('~/.vim/plugged')
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
