@@ -7,9 +7,13 @@
 - link:
     ~/.dotfiles: ''
     ~/.tmux.conf: tmux.conf
+    ~/.tmux: tmux
+    ~/.tmux.themepack: tmux-themepack
     ~/.vim: vim
     ~/.vimrc: vimrc
+
     ~/.zshrc: zshrc
+    ~/.oh-my-zsh: oh-my-zsh
     ~/.ticker.conf: ticker.conf
 - create:
     - ~/downloads
