@@ -83,9 +83,8 @@ plugins=(
 	)
 
 source ~/.oh-my-zsh/oh-my-zsh.sh
-source ~/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # User configuration
-
+export GOOGLE_APPLICATION_CREDENTIALS="$HOME/credentials/gcp_credential.json"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -122,8 +121,28 @@ alias ssh="ssh -i ~/.ssh/gc_rsa yaolifu@35.239.57.188"
 alias stock="~/ticker.sh  $(cat ~/.ticker.conf)"
 # 
 alias ch="open -a 'Google Chrome' "
+# git add .
+alias g.="git add ."
 # git commit -a -m "update"
 alias gca="git commit -a -m 'update'"
+# git status
+alias gs="git status"
+# git commit -a -m "..."
+alias gc="git commit -m"
 # git push
 alias gp="git push"
+# git push origin master
+alias gpo="git push origin master"
 
+# translate into chinese
+alias tr="trans :zh"
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+# change default python to 3.7
+alias python=/usr/local/bin/python3.7
+# restore tmux session
+alias mux="pgrep -vx tmux > /dev/null && \
+			tmux new -d -s delete-me && \
+			tmux run-shell ~/.tmux/plugins/tmux-resurrect/scripts/restore.sh && \
+			tmux kill-session -t delete-me && \
+			tmux attach || tmux attach"

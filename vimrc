@@ -6,12 +6,10 @@ set encoding=utf-8
 set fileencodings=utf-8,gb18030,big5,euc-tw,iso88591,koi8-t
 set autoread
 
-
 " Color theme
 let base16colorspace=256
 set background=dark
 colorscheme desert
-
 
 syntax on
 filetype plugin indent on
@@ -133,6 +131,5 @@ nnoremap <leader>cp :let @*=expand("%")<CR>
 inoremap {<CR> {<CR>}<C-o>O
 " Autoformat
 nnoremap <leader>af :Autoformat<CR>
-" allow the . to execute once for each line of a visual selection
 " allow the . to execute once for each line of a visual selection
 vnoremap . :normal .<CR>
