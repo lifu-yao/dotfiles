@@ -120,7 +120,7 @@ alias ssh="ssh -i ~/.ssh/gc_rsa yaolifu@35.239.57.188"
 # stock price
 alias stock="~/ticker.sh  $(cat ~/.ticker.conf)"
 # 
-alias ch="open -a 'Google Chrome' "
+alias google="open -a 'Google Chrome' "
 # git add .
 alias g.="git add ."
 # git commit -a -m "update"
@@ -146,3 +146,10 @@ alias mux="pgrep -vx tmux > /dev/null && \
 			tmux run-shell ~/.tmux/plugins/tmux-resurrect/scripts/restore.sh && \
 			tmux kill-session -t delete-me && \
 			tmux attach || tmux attach"
+
+# hide username@hostname -> username|...
+prompt_context() {
+  if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
+    prompt_segment black default "%(!.%{%F{yellow}%}.)$USER"
+  fi
+}

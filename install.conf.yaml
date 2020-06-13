@@ -8,9 +8,10 @@
     ~/.dotfiles: ''
     ~/.tmux.conf: tmux.conf
     ~/.tmux: tmux
-    ~/.tmux.themepack: tmux-themepack
+    ~/.tmux-themepack: tmux-themepack
     ~/.vim: vim
     ~/.vimrc: vimrc
+    ~/ticker.sh: ticker.sh
 
     ~/.zshrc: zshrc
     ~/.oh-my-zsh: oh-my-zsh
