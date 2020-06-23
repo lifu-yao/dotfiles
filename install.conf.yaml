@@ -11,11 +11,11 @@
     ~/.tmux-themepack: tmux-themepack
     ~/.vim: vim
     ~/.vimrc: vimrc
-    ~/ticker.sh: ticker.sh
-
+    ~/.ticker.sh: ticker.sh
     ~/.zshrc: zshrc
     ~/.oh-my-zsh: oh-my-zsh
     ~/.ticker.conf: ticker.conf
+    ~/.hammerspoon: hammerspoon
 - create:
     - ~/downloads
     - ~/.vim/undo-history

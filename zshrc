@@ -118,9 +118,7 @@ alias sn="spotify next"
 # ssh remote connect to Google computer engine session
 alias ssh="ssh -i ~/.ssh/gc_rsa yaolifu@35.239.57.188"
 # stock price
-alias stock="~/ticker.sh  $(cat ~/.ticker.conf)"
-# 
-alias google="open -a 'Google Chrome' "
+alias stock="~/.ticker.sh  $(cat ~/.ticker.conf)"
 # git add .
 alias g.="git add ."
 # git commit -a -m "update"
@@ -133,7 +131,6 @@ alias gc="git commit -m"
 alias gp="git push"
 # git push origin master
 alias gpo="git push origin master"
-
 # translate into chinese
 alias tr="trans :zh"
 

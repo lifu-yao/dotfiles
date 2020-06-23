@@ -1,0 +1,26 @@
+-- Remove animation
+hs.window.animationDuration = 0
+
+-- cmd + alt + ctrl + R -> Reload HS config
+hs.hotkey.bind({"cmd", "alt", "ctrl"}, "R", function()
+  hs.reload()
+end)
+
+-- automatic reload config
+function reloadConfig(files)
+    doReload = false
+    for _,file in pairs(files) do
+        if file:sub(-4) == ".lua" then
+            doReload = true
+        end
+    end
+    if doReload then
+        hs.reload()
+    end
+end
+myWatcher = hs.pathwatcher.new(os.getenv("HOME") .. "/dotfiles/hammerspoon/", reloadConfig):start()
+
+hs.alert.show("Config loaded")
+
+-- enable spotlight to search for app name
+hs.application.enableSpotlightForNameSearches(true)
