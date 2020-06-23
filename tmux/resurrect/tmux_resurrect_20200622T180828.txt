@@ -1,0 +1,16 @@
+pane	dotfiles	1	:zsh	1	:*	1	:/Users/yaolifu/dotfiles	1	zsh	:
+pane	dotfiles	2	:vimrc	0	:-	1	:/Users/yaolifu/dotfiles	1	vim	:vim vimrc
+pane	dotfiles	3	:tmux.conf	0	:	1	:/Users/yaolifu	1	vim	:vim dotfiles/tmux.conf
+pane	dotfiles	4	:zshrc	0	:	1	:/Users/yaolifu	1	vim	:vim dotfiles/zshrc
+pane	dotfiles	5	:hammerspoon	0	:	1	:/Users/yaolifu/dotfiles/hammerspoon	0	vim	:vim event.lua
+pane	dotfiles	5	:hammerspoon	0	:	2	:/Users/yaolifu/dotfiles/hammerspoon	1	vim	:vim window.lua
+pane	dotfiles	5	:hammerspoon	0	:	3	:/Users/yaolifu/dotfiles/hammerspoon	0	vim	:vim init.lua
+pane	dotfiles	5	:hammerspoon	0	:	4	:/Users/yaolifu/dotfiles/hammerspoon	0	vim	:vim setting.lua
+pane	dotfiles	6	:dotbot	0	:	1	:/Users/yaolifu/dotfiles	1	vim	:vim install.conf.yaml
+window	dotfiles	1	1	:*	c0fd,181x45,0,0,0
+window	dotfiles	2	0	:-	c0fe,181x45,0,0,1
+window	dotfiles	3	0	:	c0ff,181x45,0,0,2
+window	dotfiles	4	0	:	c100,181x45,0,0,3
+window	dotfiles	5	0	:	2f5f,181x45,0,0{90x45,0,0[90x22,0,0,4,90x22,0,23,7],90x45,91,0[90x22,91,0,5,90x22,91,23,6]}
+window	dotfiles	6	0	:	c105,181x45,0,0,8
+state	dotfiles	
