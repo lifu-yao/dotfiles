@@ -8,11 +8,6 @@ hs.hotkey.bind({'ctrl','alt', 'cmd'}, 'right', function() hs.window.focusedWindo
 hs.hotkey.bind({'ctrl','alt', 'cmd'}, 'up', function() hs.window.focusedWindow():moveToUnit({0, 0, 1, 0.5}) end)
 hs.hotkey.bind({'ctrl','alt', 'cmd'}, 'down', function() hs.window.focusedWindow():moveToUnit({0, 0.5, 1, 0.5}) end)
 
--- quarter of screen
--- hs.hotkey.bind({'shift', 'alt', 'cmd'}, 'left', function() hs.window.focusedWindow():moveToUnit({0, 0, 0.5, 0.5}) end)
--- hs.hotkey.bind({'shift', 'alt', 'cmd'}, 'right', function() hs.window.focusedWindow():moveToUnit({0.5, 0.5, 0.5, 0.5}) end)
--- hs.hotkey.bind({'shift', 'alt', 'cmd'}, 'up', function() hs.window.focusedWindow():moveToUnit({0.5, 0, 0.5, 0.5}) end)
--- hs.hotkey.bind({'shift', 'alt', 'cmd'}, 'down', function() hs.window.focusedWindow():moveToUnit({0, 0.5, 0.5, 0.5}) end)
 
 -- full screen
 hs.hotkey.bind({'ctrl', 'alt', 'cmd'}, 'f', function() hs.window.focusedWindow():moveToUnit({0, 0, 1, 1}) end)
@@ -48,7 +43,7 @@ local u = hs.geometry.unitrect
 
 local MACBOOK_MONITOR = "Color LCD"
 local LG_MONITOR = "LG HDR WQHD"
-local windowLayout = {
+local windowLayoutMonitor = {
 	{'Google Chrome', nil, LG_MONITOR, u(1/3,0,1/3,1), nil, nil},
 	{'Mail', nil, MACBOOK_MONITOR, u(0,0,1,1), nil, nil},
 	{'Notion',nil, LG_MONITOR, u(0,0,1/3,1), nil, nil},
@@ -56,4 +51,16 @@ local windowLayout = {
 	{'WeChat',nil,MACBOOK_MONITOR, u(0,0,1/2,1), nil, nil},
 }
 
-hs.hotkey.bind({'cmd', 'alt', 'ctrl'}, 'E', function() hs.layout.apply(windowLayout) end)
+hs.hotkey.bind({'cmd', 'alt', 'ctrl'}, 'E', function() hs.layout.apply(windowLayoutMonitor) end)
+
+
+local windowLayoutFull = {
+	{'Google Chrome', nil, LG_MONITOR, u(0,0,1,1), nil, nil},
+	{'IntelliJ IDEA CE', nil, LG_MONITOR, u(0,0,1,1), nil, nil},
+	{'Mail', nil, MACBOOK_MONITOR, u(0,0,1,1), nil, nil},
+	{'Notion',nil, LG_MONITOR, u(0,0,1,1), nil, nil},
+	{'iTerm2',nil, LG_MONITOR,u(0,0,1,1), nil, nil},
+	{'WeChat',nil,MACBOOK_MONITOR, u(0,0,1,1), nil, nil},
+}
+
+hs.hotkey.bind({'cmd', 'alt', 'ctrl'}, 'J', function() hs.layout.apply(windowLayoutFull) end)

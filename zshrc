@@ -46,7 +46,7 @@ ZSH_THEME="agnoster"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
-
+ZSH_DISABLE_COMPFIX="true"
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
 # much, much faster.
@@ -135,8 +135,6 @@ alias gpo="git push origin master"
 alias tr="trans :zh"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-# change default python to 3.7
-alias python=/usr/local/bin/python3.7
 # restore tmux session
 alias mux="pgrep -vx tmux > /dev/null && \
 			tmux new -d -s delete-me && \
