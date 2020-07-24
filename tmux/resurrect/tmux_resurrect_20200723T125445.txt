@@ -1,0 +1,19 @@
+pane	Nand2Tetris	1	:HDL	1	:*	1	:/Users/lifu/Dropbox/Projects/nand2tetris/projects/02	0	zsh	:
+pane	Nand2Tetris	1	:HDL	1	:*	2	:/Users/lifu/Dropbox/Projects/nand2tetris/projects/03/a	1	zsh	:
+pane	desktop	1	:zsh	1	:*	1	:/Users/lifu	1	zsh	:
+pane	dotfiles	1	:tmux.conf	0	:	1	:/Users/lifu	1	Vim	:/usr/local/Cellar/macvim/8.2-163_2/MacVim.app/Contents/MacOS/Vim .tmux.conf
+pane	dotfiles	2	:zshrc	0	:	1	:/Users/lifu	1	Vim	:/usr/local/Cellar/macvim/8.2-163_2/MacVim.app/Contents/MacOS/Vim .zshrc
+pane	dotfiles	3	:vimrc	0	:	1	:/Users/lifu	1	Vim	:/usr/local/Cellar/macvim/8.2-163_2/MacVim.app/Contents/MacOS/Vim .vimrc
+pane	dotfiles	4	:dotbot	0	:-	1	:/Users/lifu/dotfiles	1	Vim	:/usr/local/Cellar/macvim/8.2-163_2/MacVim.app/Contents/MacOS/Vim install.conf.yaml
+pane	dotfiles	5	:hammerspoon	1	:*	1	:/Users/lifu/dotfiles/hammerspoon	0	Vim	:/usr/local/Cellar/macvim/8.2-163_2/MacVim.app/Contents/MacOS/Vim init.lua
+pane	dotfiles	5	:hammerspoon	1	:*	2	:/Users/lifu/dotfiles/hammerspoon	0	Vim	:/usr/local/Cellar/macvim/8.2-163_2/MacVim.app/Contents/MacOS/Vim event.lua
+pane	dotfiles	5	:hammerspoon	1	:*	3	:/Users/lifu/dotfiles/hammerspoon	0	Vim	:/usr/local/Cellar/macvim/8.1-161/MacVim.app/Contents/MacOS/Vim window.lua
+pane	dotfiles	5	:hammerspoon	1	:*	4	:/Users/lifu/dotfiles/hammerspoon	1	Vim	:/usr/local/Cellar/macvim/8.2-163_2/MacVim.app/Contents/MacOS/Vim setting.lua
+window	Nand2Tetris	1	1	:*	dde6,343x62,0,0{172x62,0,0,1,170x62,173,0,2}
+window	desktop	1	1	:*	5c51,113x62,0,0,12
+window	dotfiles	1	0	:	b840,113x62,0,0,3
+window	dotfiles	2	0	:	b842,113x62,0,0,5
+window	dotfiles	3	0	:	b843,113x62,0,0,6
+window	dotfiles	4	0	:-	b844,113x62,0,0,7
+window	dotfiles	5	1	:*	8a9d,113x62,0,0{56x62,0,0[56x31,0,0,8,56x30,0,32,9],56x62,57,0[56x31,57,0,10,56x30,57,32,11]}
+state	dotfiles	desktop

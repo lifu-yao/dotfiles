@@ -80,6 +80,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'w0rp/ale'
 Plug 'pangloss/vim-javascript'
+Plug 'vim-jp/vim-cpp'
 Plug 'mxw/vim-jsx'
 Plug 'scrooloose/nerdtree'
 Plug 'kien/ctrlp.vim'
@@ -133,3 +134,16 @@ inoremap {<CR> {<CR>}<C-o>O
 nnoremap <leader>af :Autoformat<CR>
 " allow the . to execute once for each line of a visual selection
 vnoremap . :normal .<CR>
+
+" nnoremap <C-c> :!g++ -o  %:r.out % -std=c++11<Enter><Enter>
+" nnoremap <C-x> :!./%:r.out<Enter>
+
+autocmd filetype cpp nnoremap <f5> :w <bar> !g++ -std=c++11 -O2 -Wall % -o %:r.out && %:r.out <cr>
+
+
+
+
+
+
+
+

@@ -17,18 +17,18 @@ hs.hotkey.bind({'ctrl', 'alt', 'cmd'}, 'c', function() hs.window.focusedWindow()
 
 -- move between displays
 -- hs.hotkey.bind({'ctrl', 'alt', 'cmd'}, 'right', function()
--- 	local win = hs.window.focusedWindow()
--- 	local next = win:screen():toEast()
--- 	if next then
--- 		win:moveToScreen(next, true)
--- 	end
+--	local win = hs.window.focusedWindow()
+--	local next = win:screen():toEast()
+--	if next then
+--		win:moveToScreen(next, true)
+--	end
 -- end)
 -- hs.hotkey.bind({'ctrl', 'alt', 'cmd'}, 'left', function()
--- 	local win = hs.window.focusedWindow()
--- 	local next = win:screen():toWest()
--- 	if next then
--- 		win:moveToScreen(next, true)
--- 	end
+--	local win = hs.window.focusedWindow()
+--	local next = win:screen():toWest()
+--	if next then
+--		win:moveToScreen(next, true)
+--	end
 -- end)
 
 -- window hints
@@ -44,23 +44,38 @@ local u = hs.geometry.unitrect
 local MACBOOK_MONITOR = "Color LCD"
 local LG_MONITOR = "LG HDR WQHD"
 local windowLayoutMonitor = {
-	{'Google Chrome', nil, LG_MONITOR, u(1/3,0,1/3,1), nil, nil},
-	{'Mail', nil, MACBOOK_MONITOR, u(0,0,1,1), nil, nil},
+	{'iTerm2',nil,LG_MONITOR, u(0,0,1/3,1), nil, nil},
 	{'Notion',nil, LG_MONITOR, u(0,0,1/3,1), nil, nil},
-	{'iTerm2',nil, LG_MONITOR, u(2/3,0,1/3,1), nil, nil},
-	{'WeChat',nil,MACBOOK_MONITOR, u(0,0,1/2,1), nil, nil},
+	{'Google Chrome', nil, LG_MONITOR, u(1/3,0,1/3,1), nil, nil},
+	{'Kindle', nil, LG_MONITOR, u(1/3,0,1/3,1), nil, nil},
+	{'WeChat',nil, LG_MONITOR, u(2/3,0,1/3,1), nil, nil},
+	{'Mail',nil, LG_MONITOR, u(2/3,0,1/3,1), nil, nil},
 }
 
 hs.hotkey.bind({'cmd', 'alt', 'ctrl'}, 'E', function() hs.layout.apply(windowLayoutMonitor) end)
 
 
 local windowLayoutFull = {
-	{'Google Chrome', nil, LG_MONITOR, u(0,0,1,1), nil, nil},
-	{'IntelliJ IDEA CE', nil, LG_MONITOR, u(0,0,1,1), nil, nil},
-	{'Mail', nil, MACBOOK_MONITOR, u(0,0,1,1), nil, nil},
+	{'iTerm2',nil,LG_MONITOR, u(0,0,1,1), nil, nil},
 	{'Notion',nil, LG_MONITOR, u(0,0,1,1), nil, nil},
-	{'iTerm2',nil, LG_MONITOR,u(0,0,1,1), nil, nil},
-	{'WeChat',nil,MACBOOK_MONITOR, u(0,0,1,1), nil, nil},
+	{'Google Chrome', nil, LG_MONITOR, u(0,0,1,1), nil, nil},
+	{'Kindle', nil, LG_MONITOR, u(0,0,1,1), nil, nil},
+	{'WeChat',nil, LG_MONITOR, u(0,0,1,1), nil, nil},
+	{'Mail',nil, LG_MONITOR, u(0,0,1,1), nil, nil},
 }
 
 hs.hotkey.bind({'cmd', 'alt', 'ctrl'}, 'J', function() hs.layout.apply(windowLayoutFull) end)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
