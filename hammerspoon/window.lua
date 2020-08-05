@@ -49,7 +49,8 @@ local windowLayoutMonitor = {
 	{'Google Chrome', nil, LG_MONITOR, u(1/3,0,1/3,1), nil, nil},
 	{'Kindle', nil, LG_MONITOR, u(1/3,0,1/3,1), nil, nil},
 	{'WeChat',nil, LG_MONITOR, u(2/3,0,1/3,1), nil, nil},
-	{'Mail',nil, LG_MONITOR, u(2/3,0,1/3,1), nil, nil},
+	{'Microsoft Outlook',nil, LG_MONITOR, u(2/3,0,1/3,1), nil, nil},
+	{'d-chat',nil, LG_MONITOR, u(2/3,0,1/3,1), nil, nil},
 }
 
 hs.hotkey.bind({'cmd', 'alt', 'ctrl'}, 'E', function() hs.layout.apply(windowLayoutMonitor) end)
@@ -61,7 +62,8 @@ local windowLayoutFull = {
 	{'Google Chrome', nil, LG_MONITOR, u(0,0,1,1), nil, nil},
 	{'Kindle', nil, LG_MONITOR, u(0,0,1,1), nil, nil},
 	{'WeChat',nil, LG_MONITOR, u(0,0,1,1), nil, nil},
-	{'Mail',nil, LG_MONITOR, u(0,0,1,1), nil, nil},
+	{'Microsoft Outlook',nil, LG_MONITOR, u(0,0,1,1), nil, nil},
+	{'d-chat',nil, LG_MONITOR, u(0,0,1,1), nil, nil},
 }
 
 hs.hotkey.bind({'cmd', 'alt', 'ctrl'}, 'J', function() hs.layout.apply(windowLayoutFull) end)

@@ -10,6 +10,12 @@ export ZSH="$HOME/.oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="agnoster"
 
+export MAVEN_HOME=/Users/lifuyao/didi/apache-maven-3.6.3
+export PATH=$PATH:$MAVEN_HOME/bin
+
+
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
@@ -116,7 +122,7 @@ alias sp="spotify play"
 alias ss="spotify pause"
 alias sn="spotify next"
 # ssh remote connect to Google computer engine session
-alias ssh="ssh -i ~/.ssh/gc_rsa yaolifu@35.239.57.188"
+# alias ssh="ssh -i ~/.ssh/gc_rsa yaolifu@35.239.57.188"
 # stock price
 alias stock="~/.ticker.sh  $(cat ~/.ticker.conf)"
 # git add .
