@@ -1,0 +1,9 @@
+pane	0	3	:desktop	1	:*	1	:/Users/lifuyao	1	zsh	:
+pane	dotfiles	1	:hs	0	:-	1	:/Users/lifuyao/dotfiles/hammerspoon	1	vim	:vim window.lua
+pane	dotfiles	2	:vimrc	0	:	1	:/Users/lifuyao	1	vim	:vim .vimrc
+pane	dotfiles	3	:zshrc	1	:*	1	:/Users/lifuyao	1	vim	:vim .zshrc
+window	0	3	1	:*	d201,103x59,0,0,4
+window	dotfiles	1	0	:-	d202,103x59,0,0,5
+window	dotfiles	2	0	:	d203,103x59,0,0,6
+window	dotfiles	3	1	:*	d204,103x59,0,0,7
+state	0	dotfiles
