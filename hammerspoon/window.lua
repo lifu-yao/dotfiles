@@ -62,9 +62,9 @@ hs.hotkey.bind({'cmd', 'alt', 'ctrl'}, 'E', function() hs.layout.apply(windowLay
 
 local windowLayoutMonitorWithLaptop = {
 	{'iTerm2',nil,LG_MONITOR, u(0,0,2/3,1), nil, nil},
+	{'Google Chrome',nil,LG_MONITOR, u(0,0,2/3,1), nil, nil},
 	{'Notion',nil, MACBOOK_MONITOR, u(0,0,1,1), nil, nil},
 	{'Postman',nil, MACBOOK_MONITOR, u(0,0,1,1), nil, nil},
-	{'Google Chrome', nil, LG_MONITOR, u(2/3,0,1/3,1), nil, nil},
 	{'Kindle', nil, LG_MONITOR, u(1/3,0,1/3,1), nil, nil},
 	{'com.jetbrains.intellij.ce', LG_MONITOR, u(1/3,0,1/3,1), nil, nil},
 	{'WeChat',nil, LG_MONITOR, u(2/3,0,1/3,1/2), nil, nil},
@@ -77,16 +77,18 @@ local windowLayoutMonitorWithLaptop = {
 hs.hotkey.bind({'cmd', 'alt', 'ctrl'}, 'W', function() hs.layout.apply(windowLayoutMonitorWithLaptop) end)
 
 local windowLayoutFull = {
-	{'iTerm2',nil,LG_MONITOR, u(0,0,1,1), nil, nil},
-	{'Notion',nil, LG_MONITOR, u(0,0,1,1), nil, nil},
-	{'Google Chrome', nil, LG_MONITOR, u(0,0,1,1), nil, nil},
-	{'Kindle', nil, LG_MONITOR, u(0,0,1,1), nil, nil},
-	{'IntelliJ IDEA CE', LG_MONITOR, u(0,0,1,1), nil, nil},
-	{'WeChat',nil, LG_MONITOR, u(0,0,1,1), nil, nil},
-	{'Slack',nil, LG_MONITOR, u(0,0,1,1), nil, nil},
-	{'Messenger',nil, LG_MONITOR, u(0,0,1,1), nil, nil},
-	{'Microsoft Outlook',nil, LG_MONITOR, u(0,0,1,1), nil, nil},
-	{'d-chat',nil, LG_MONITOR, u(0,0,1,1), nil, nil},
+	{'Notion',nil, MACBOOK_MONITOR, u(0,0,1/2,1), nil, nil},
+	{'Postman',nil, MACBOOK_MONITOR, u(1/2,0,1/2,1), nil, nil},
+
+	{'iTerm2',nil,LG_MONITOR, u(0,0,1/3,2/3), nil, nil},
+	{'com.jetbrains.intellij.ce', LG_MONITOR, u(0,2/3,1/3,1/3), nil, nil},
+	{'Google Chrome',nil,LG_MONITOR, u(1/3,0,1/3,2/3), nil, nil},
+	{'Microsoft Outlook',nil, LG_MONITOR, u(1/3,2/3,1/3,1/3), nil, nil},
+	{'com.dichat.desktop',nil, LG_MONITOR, u(0,2/3,1/3,1/3), nil, nil},
+
+	{'WeChat',nil, LG_MONITOR, u(2/3,0,1/3,1/3), nil, nil},
+	{'Slack',nil, LG_MONITOR, u(2/3,1/3,1/3,1/3), nil, nil},
+	{'Messenger',nil, LG_MONITOR, u(2/3,2/3,1/3,1/3), nil, nil},
 }
 
 hs.hotkey.bind({'cmd', 'alt', 'ctrl'}, 'J', function() hs.layout.apply(windowLayoutFull) end)
