@@ -1,0 +1,19 @@
+pane	0	1	:odin	0	:	1	:/Users/lifuyao	1	zsh	:
+pane	0	2	:stable	0	:	1	:/Users/lifuyao	1	ssh	:ssh root@10.96.77.204
+pane	0	3	:newton-module	1	:*Z	1	:/Users/lifuyao/didi/newton/risk-newton-api	0	zsh	:
+pane	0	3	:newton-module	1	:*Z	2	:/Users/lifuyao/didi/newton/risk-newton-remote	1	zsh	:
+pane	0	4	:dev	0	:-	1	:/Users/lifuyao	1	ssh	:ssh root@10.96.84.34
+pane	dotfiles	1	:hs	0	:-	1	:/Users/lifuyao/dotfiles/hammerspoon	1	vim	:vim window.lua
+pane	dotfiles	2	:vimrc	0	:	1	:/Users/lifuyao	1	vim	:vim .vimrc
+pane	dotfiles	3	:zshrc	1	:*	1	:/Users/lifuyao	1	vim	:vim .zshrc
+pane	dotfiles	4	:espanso	0	:	1	:/Users/lifuyao/Library/Preferences/espanso	1	vim	:vim default.yml
+pane	dotfiles	4	:espanso	0	:	2	:/Users/lifuyao	0	zsh	:
+window	0	1	0	:	af7e,148x40,0,0,1
+window	0	2	0	:	5b81,94x34,0,0,12
+window	0	3	1	:*Z	25d0,285x52,0,0{142x52,0,0,2,142x52,143,0,14}
+window	0	4	0	:-	5cc4,285x52,0,0,15
+window	dotfiles	1	0	:-	b444,113x42,0,0,7
+window	dotfiles	2	0	:	c5e5,231x56,0,0,8
+window	dotfiles	3	1	:*	d446,178x49,0,0,9
+window	dotfiles	4	0	:	1530,178x48,0,0{89x48,0,0,10,88x48,90,0,11}
+state	0	dotfiles
