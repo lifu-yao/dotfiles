@@ -1,0 +1,63 @@
+# espanso configuration file
+
+# This is the default configuration file, change it as you like it
+# You can refer to the official documentation:
+# https://espanso.org/docs/
+
+# Matches are the substitution rules, when you type the "trigger" string
+# it gets replaced by the "replace" string.
+matches:
+  # Simple text replacement
+  - trigger: ":espanso"
+    replace: "Hi there!"
+
+  # Dates
+  - trigger: ":date"
+    replace: "{{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%m/%d/%Y"
+
+  # Shell commands
+  - trigger: ":shell"
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: shell
+        params:
+          cmd: "echo Hello from your shell"
+
+  # Simple text replacement
+  - trigger: ":br"
+    replace: "Best Regards,\nLifu Yao"
+
+  - trigger: ":pass"
+    replace: "Xiangweiwan-1991"
+
+  - trigger: ":home"
+    replace: "555 4th st. #415 San Francisco 94107"
+
+  - trigger: ":number"
+    replace: "510-816-1705"
+
+  - trigger: ":email"
+    replace: "yaoleaf@gmail.com"
+
+  - trigger: ":log"
+    replace: "/home/xiaoju/logs/risk-"
+
+  - trigger: ":newton"
+    replace: "http://newton.intra.xiaojukeji.com/#/event/list?bizType=GLOBAL_GM&menu=NEWTON"
+
+  - trigger: ":tel"
+    replace: "telnet localhost "
+
+  - trigger: ":tl"
+    replace: "tail -f "
+
+  - trigger: ":gan"
+    replace: "http://gandalf.intra.didiglobal.com/"
+
+

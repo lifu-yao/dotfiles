@@ -148,6 +148,8 @@ alias gcm="git commit -m "
 alias gs="git status"
 # git push
 alias gp="git push"
+# git pull original master 
+alias gpom="git pull origin master"
 # git checkout dev_lifuyao
 alias gl="git checkout dev_lifuyao"
 # translate into chinese
