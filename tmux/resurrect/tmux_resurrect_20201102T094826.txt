@@ -1,0 +1,29 @@
+pane	Gandalf	2	:MySQL	1	:*	1	:/Users/lifuyao/didi/gandalf-global	1	zsh	:
+pane	Lifu	1	:desktop	1	:*Z	1	:/Users/lifuyao/projects/techcareer.io	0	zsh	:
+pane	Lifu	1	:desktop	1	:*Z	2	:/Users/lifuyao	1	zsh	:
+pane	Newton	1	:odin	1	:*Z	1	:/Users/lifuyao/didi/newton/risk-newton-event	0	zsh	:
+pane	Newton	1	:odin	1	:*Z	2	:/Users/lifuyao/didi	1	zsh	:
+pane	Newton	2	:stable	0	:	1	:/Users/lifuyao	1	zsh	:
+pane	Newton	3	:newton-module-repo	0	:	1	:/Users/lifuyao/didi/newton/risk-remote	1	zsh	:
+pane	Newton	4	:dev	0	:	1	:/Users/lifuyao	1	zsh	:
+pane	Newton	6	:LifuyaoVM	0	:	1	:/Users/lifuyao/didi/newton/risk-newton-remote	1	zsh	:
+pane	algo	1	:zsh	1	:*	1	:/Users/lifuyao/projects/techcareer.io	1	zsh	:
+pane	dotfiles	1	:hs	1	:*	1	:/Users/lifuyao/dotfiles/hammerspoon	1	vim	:vim window.lua
+pane	dotfiles	2	:vimrc	0	:	1	:/Users/lifuyao	1	vim	:vim .vimrc
+pane	dotfiles	3	:zshrc	0	:	1	:/Users/lifuyao/bin	1	vim	:vim /Users/lifuyao/.zshrc
+pane	dotfiles	4	:espanso	0	:	1	:/Users/lifuyao/dotfiles/espanso	1	vim	:vim default.yml
+pane	dotfiles	5	:symbolic	0	:	1	:/Users/lifuyao/dotfiles	1	vim	:vim install.conf.yaml
+window	Gandalf	2	1	:*	d43f,178x49,0,0,2
+window	Lifu	1	1	:*Z	0f84,88x49,0,0{44x49,0,0,4,43x49,45,0,5}
+window	Newton	1	1	:*Z	10e7,169x65,0,0{84x65,0,0,6,84x65,85,0,7}
+window	Newton	2	0	:	c885,169x65,0,0,8
+window	Newton	3	0	:	c886,169x65,0,0,9
+window	Newton	4	0	:	597f,94x52,0,0,10
+window	Newton	6	0	:	6470,169x65,0,0,11
+window	algo	1	1	:*	6a56,178x49,0,0,17
+window	dotfiles	1	1	:*	6761,88x49,0,0,12
+window	dotfiles	2	0	:	60b2,162x45,0,0,13
+window	dotfiles	3	0	:	6a53,178x49,0,0,14
+window	dotfiles	4	0	:	5cd4,343x62,0,0,15
+window	dotfiles	5	0	:	5cd5,343x62,0,0,16
+state	algo	

@@ -48,16 +48,12 @@ matches:
   - trigger: ":log"
     replace: "/home/xiaoju/logs/risk-"
 
-  - trigger: ":newton"
-    replace: "http://newton.intra.xiaojukeji.com/#/event/list?bizType=GLOBAL_GM&menu=NEWTON"
-
   - trigger: ":tel"
     replace: "telnet localhost "
 
   - trigger: ":tl"
     replace: "tail -f "
 
-  - trigger: ":gan"
-    replace: "http://gandalf.intra.didiglobal.com/"
-
+  - trigger: ":zsh"
+    replace: "source ~/.zshrc"
 

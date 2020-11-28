@@ -1,0 +1,29 @@
+pane	Gandalf	1	:Gandalf Dev	1	:*	1	:/Users/lifuyao/didi/gandalf-global	1	zsh	:
+pane	Gandalf	2	:Gandalf Odin	0	:-Z	1	:/Users/lifuyao/didi/gandalf-global	1	zsh	:
+pane	Gandalf	2	:Gandalf Odin	0	:-Z	2	:/Users/lifuyao/didi/gandalf-global	0	zsh	:
+pane	Gandalf	2	:Gandalf Odin	0	:-Z	3	:/Users/lifuyao/didi/gandalf-global	0	zsh	:
+pane	Lifu	1	:desktop	1	:*	1	:/Users/lifuyao/projects/techcareer.io	1	zsh	:
+pane	Newton	2	:stable	0	:	1	:/Users/lifuyao	1	zsh	:
+pane	Newton	3	:newton-module-repo	0	:-	1	:/Users/lifuyao/didi/newton/risk-newton-event	1	zsh	:
+pane	Newton	4	:dev	0	:	1	:/Users/lifuyao	1	zsh	:
+pane	Newton	6	:Odin	1	:*	1	:/Users/lifuyao	1	zsh	:
+pane	algo	1	:zsh	1	:*	1	:/Users/lifuyao/projects/techcareer.io	1	zsh	:
+pane	dotfiles	1	:hs	0	:-	1	:/Users/lifuyao/dotfiles/hammerspoon	1	vim	:vim window.lua
+pane	dotfiles	2	:vimrc	0	:	1	:/Users/lifuyao	1	vim	:vim .vimrc
+pane	dotfiles	3	:zshrc	1	:*	1	:/Users/lifuyao/bin	1	vim	:vim /Users/lifuyao/.zshrc
+pane	dotfiles	4	:espanso	0	:	1	:/Users/lifuyao/dotfiles/espanso	1	vim	:vim default.yml
+pane	dotfiles	5	:symbolic	0	:	1	:/Users/lifuyao/dotfiles	1	vim	:vim install.conf.yaml
+window	Gandalf	1	1	:*	d7f3,148x40,0,0,24
+window	Gandalf	2	0	:-Z	2872,285x52,0,0{81x52,0,0,1,80x52,82,0,23,122x52,163,0,18}
+window	Lifu	1	1	:*	cc3f,178x47,0,0,2
+window	Newton	2	0	:	ce63,88x49,0,0,6
+window	Newton	3	0	:-	cc44,178x47,0,0,7
+window	Newton	4	0	:	d445,178x49,0,0,8
+window	Newton	6	1	:*	d7f4,148x40,0,0,25
+window	algo	1	1	:*	d7f6,148x40,0,0,27
+window	dotfiles	1	0	:-	6a50,178x49,0,0,11
+window	dotfiles	2	0	:	6761,88x49,0,0,12
+window	dotfiles	3	1	:*	57f2,148x40,0,0,13
+window	dotfiles	4	0	:	6763,88x49,0,0,14
+window	dotfiles	5	0	:	6764,88x49,0,0,15
+state	Gandalf	dotfiles

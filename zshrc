@@ -90,7 +90,9 @@ plugins=(
 
 source ~/.oh-my-zsh/oh-my-zsh.sh
 # User configuration
-export GOOGLE_APPLICATION_CREDENTIALS="$HOME/credentials/gcp_credential.json"
+# export GOOGLE_APPLICATION_CREDENTIALS="$HOME/credentials/gcp_credential.json"
+export PATH=~/bin:$PATH
+export PATH="/usr/local/opt/grep/libexec/gnubin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -122,6 +124,8 @@ alias cl="clear"
 alias t.="tmux a -t dotfiles"
 # ssh remote connect to Didi relay system
 alias ddssh="expect ~/didi/relay/autologin.expect"
+alias ddssh1="expect ~/didi/relay/autologin1.expect"
+alias ddssh2="expect ~/didi/relay/autologin2.expect"
 # ssh to my personal VM
 alias ssh_lifu="ssh root@10.179.18.168"
 
@@ -129,12 +133,13 @@ alias ssh_config="ssh root@10.179.18.197"
 alias ssh_gateway="ssh root@10.179.147.105"
 alias ssh_mgr="ssh root@10.96.83.46"
 alias ssh_event="ssh root@10.96.88.217"
+alias ssh_event_dev="ssh root@10.96.91.8"
 alias ssh_event_async="ssh root@10.96.101.55"
 alias ssh_remote="ssh root@10.96.77.205"
 alias ssh_newton_remote="ssh root@10.96.77.204"
 alias ssh_data="ssh root@10.96.81.40"
 alias ssh_mq="ssh root@10.96.91.244"
-
+alias ssh_lifu="ssh root@10.190.1.168"
 alias ssh_newton_remote_dev="ssh root@10.96.84.34"
 
 
@@ -154,6 +159,18 @@ alias gpom="git pull origin master"
 alias gl="git checkout dev_lifuyao"
 # translate into chinese
 alias tr="trans :zh"
+# cmd/start.sh --fast
+alias start="cmd/start.sh --fast"
+# cmd/log.sh
+alias logs="cmd/logs.sh"
+# cmd/stop.sh
+alias stop="cmd/stop.sh"
+
+alias ssh.connector=~/Apps/ssh-connector/ssh.connector.sh
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 # restore tmux session

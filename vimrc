@@ -49,10 +49,7 @@ set shiftround " round indent to a multiple of 'shiftwidth'
 let g:markdown_fenced_languages = ['html', 'java', 'bash=sh']
 
 
-" -----------------
 " Syntastic
-" -----------------
-
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
@@ -62,6 +59,10 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
+" set parameters for Bash IDE
+let g:BASH_AuthorName   = 'lifuyao'
+let g:BASH_Email        = 'yaoleaf@gmail.com'
+let g:BASH_Company      = 'Leaf LLC'
 
 set mouse=a
 
@@ -95,12 +96,12 @@ Plug 'kana/vim-textobj-line'
 Plug 'kana/vim-textobj-entire'
 Plug 'kana/vim-textobj-indent'
 Plug 'tpope/vim-commentary'
+Plug 'vim-scripts/bash-support.vim'
 call plug#end()
 
 
 let delimitMate_matchpairs = "(:),[:],{:}"
 au FileType md,java,vim,html let b:delimitMate_matchpairs = "(:),[:],{:}"
-
 
 " ##########################################################
 " Mapping Shortcuts
@@ -127,7 +128,7 @@ nnoremap <leader>t :NERDTree<CR>
 " fuzzy search file
 nnoremap <leader>f :CtrlP<CR>
 " cp to yank the current fileanme
-nnoremap <leader>cp :let @*=expand("%")<CR>
+nnoremap <leader>cp :let @*=expand("%:p")<CR>
 " Enter to indent brackets
 inoremap {<CR> {<CR>}<C-o>O
 " Autoformat
