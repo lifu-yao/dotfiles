@@ -15,6 +15,7 @@ export PATH=$PATH:$MAVEN_HOME/bin
 
 
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -161,6 +162,7 @@ alias gl="git checkout dev_lifuyao"
 alias tr="trans :zh"
 # cmd/start.sh --fast
 alias start="cmd/start.sh --fast"
+# alias start="cmd/start.sh --mutagen --fast"
 # cmd/log.sh
 alias logs="cmd/logs.sh"
 # cmd/stop.sh

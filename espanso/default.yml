@@ -46,7 +46,7 @@ matches:
     replace: "yaoleaf@gmail.com"
 
   - trigger: ":log"
-    replace: "/home/xiaoju/logs/risk-"
+    replace: "cat /home/xiaoju/logs/gandalf-info.log"
 
   - trigger: ":tel"
     replace: "telnet localhost "

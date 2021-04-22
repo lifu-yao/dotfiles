@@ -1,0 +1,40 @@
+pane	AlgoLibrary	1	:AlgoLibrary	1	:*	1	:/Users/lifuyao/projects/techcareer.io	1	zsh	:
+pane	AlgoLibrary	1	:AlgoLibrary	1	:*	2	:/Users/lifuyao/projects/techcareer.io	0	zsh	:
+pane	Gandalf	1	:hs	0	:-	1	:/Users/lifuyao/didi/gandalf-global	1	bash	:/bin/bash /Users/lifuyao/Apps/ssh-connector/ssh.connector.sh gandalf us 0
+pane	Gandalf	1	:hs	0	:-	2	:/private/tmp/xiaoju/ep/as/store/conf/gandalf_global_config	0	bash	:/bin/bash /Users/lifuyao/Apps/ssh-connector/ssh.connector.sh gandalf us 1
+pane	Gandalf	1	:hs	0	:-	3	:/private/tmp/xiaoju/ep/as/store/conf/gandalf_global_config	0	bash	:/bin/bash /Users/lifuyao/Apps/ssh-connector/ssh.connector.sh gandalf us 2
+pane	Gandalf	2	:vimrc	1	:*	1	:/Users/lifuyao/didi/gandalf-global	0	zsh	:
+pane	Gandalf	2	:vimrc	1	:*	2	:/private/tmp/xiaoju/ep/as/store/conf/conf_gandalf	0	zsh	:
+pane	Gandalf	2	:vimrc	1	:*	3	:/Users/lifuyao	1	zsh	:
+pane	Lifu	1	:desktop	0	:-	1	:/Users/lifuyao/softwares/tomcat_1/bin	0	zsh	:
+pane	Lifu	1	:desktop	0	:-	2	:/Users/lifuyao/softwares/tomcat_2/bin	0	zsh	:
+pane	Lifu	1	:desktop	0	:-	3	:/Users/lifuyao/softwares/nginx-1.18.0	1	redis-server	:redis-server *:6379
+pane	Lifu	1	:desktop	0	:-	4	:/usr/local/etc/nginx	0	zsh	:
+pane	Lifu	2	:zsh	1	:*	1	:/Users/lifuyao/Apps/ssh-connector	1	zsh	:
+pane	Newton	2	:stable	0	:-	1	:/Users/lifuyao/Desktop	1	zsh	:
+pane	Newton	3	:newton-module-repo	0	:	1	:/Users/lifuyao/didi/newton/risk-newton-monitor	1	zsh	:
+pane	Newton	4	:dev	0	:	1	:/Users/lifuyao	1	zsh	:
+pane	Newton	6	:Odin	1	:*	1	:/Users/lifuyao	0	zsh	:
+pane	Newton	6	:Odin	1	:*	2	:/Users/lifuyao	1	zsh	:
+pane	dotfiles	1	:hs	0	:	1	:/Users/lifuyao/dotfiles/hammerspoon	1	vim	:vim window.lua
+pane	dotfiles	2	:vimrc	0	:	1	:/Users/lifuyao	1	vim	:vim .vimrc
+pane	dotfiles	3	:zshrc	0	:-	1	:/Users/lifuyao/bin	1	vim	:vim /Users/lifuyao/.zshrc
+pane	dotfiles	4	:espanso	0	:	1	:/Users/lifuyao/dotfiles/espanso	1	vim	:vim default.yml
+pane	dotfiles	5	:symbolic	0	:	1	:/Users/lifuyao/dotfiles	1	vim	:vim install.conf.yaml
+pane	dotfiles	6	:hosts	1	:*	1	:/Users/lifuyao/dotfiles/hammerspoon	1	zsh	:
+window	AlgoLibrary	1	1	:*	2d0e,343x61,0,0{172x61,0,0,1,170x61,173,0,29}
+window	Gandalf	1	0	:-	7c10,343x61,0,0{156x61,0,0,32,113x61,157,0,33,72x61,271,0,34}
+window	Gandalf	2	1	:*	ada5,343x61,0,0{100x61,0,0,4,99x61,101,0,6,142x61,201,0,30}
+window	Lifu	1	0	:-	b286,343x61,0,0{85x61,0,0,7,85x61,86,0,20,85x61,172,0,19,85x61,258,0,22}
+window	Lifu	2	1	:*	dad2,343x61,0,0,23
+window	Newton	2	0	:-	b545,343x61,0,0,8
+window	Newton	3	0	:	b546,343x61,0,0,9
+window	Newton	4	0	:	5acf,343x61,0,0,10
+window	Newton	6	1	:*	8df9,343x61,0,0{170x61,0,0,11,172x61,171,0,12}
+window	dotfiles	1	0	:	5ad2,343x61,0,0,13
+window	dotfiles	2	0	:	5ad3,343x61,0,0,14
+window	dotfiles	3	0	:-	5ad4,343x61,0,0,15
+window	dotfiles	4	0	:	5ad5,343x61,0,0,16
+window	dotfiles	5	0	:	5ad6,343x61,0,0,17
+window	dotfiles	6	1	:*	5a95,171x61,0,0,35
+state	dotfiles	Gandalf
